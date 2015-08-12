@@ -11,6 +11,7 @@ module.exports = function(req, res, next) {
   req.options.values = {
     user: userId
   };
+  delete req.body.user;
 
   next();
 };
